@@ -1,0 +1,17 @@
+{
+  "name": "nixek-ci-test",
+  "steps": [
+    {
+      "name": "lint",
+      "command": ["sh", "-c", "echo 'linting...' && true"]
+    },
+    {
+      "name": "test",
+      "command": ["sh", "-c", "echo 'running tests...' && echo 'all tests passed!'"]
+    },
+    {
+      "name": "build",
+      "command": ["sh", "-c", "echo 'building...' && echo 'build successful!'"]
+    }
+  ]
+}
