@@ -1,0 +1,5 @@
+{
+  "name": "should-fail",
+  "job_id": "local-test-2",
+  "steps": [{"command":["/nix/store/hwz2l7ihv2skq7gr5l3paavs3rr9il7z-hello-2.12.1/bin/hello"],"name":"This step passes"},{"command":["/bin/sh","-c","echo 'About to fail!' && exit 42"],"name":"This step fails"},{"command":["echo","unreachable"],"name":"This step should not run"}]
+}
