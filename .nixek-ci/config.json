@@ -1,5 +1,5 @@
 {
-  "name": "nixek-ci-test-failing",
+  "name": "nixek-ci-test",
   "steps": [
     {
       "name": "lint",
@@ -7,11 +7,11 @@
     },
     {
       "name": "test",
-      "command": ["sh", "-c", "echo 'running tests...' && echo 'FAIL: test_something failed' && exit 1"]
+      "command": ["sh", "-c", "echo 'running tests...' && echo 'all tests passed!' && true"]
     },
     {
       "name": "build",
-      "command": ["sh", "-c", "echo 'this should not run'"]
+      "command": ["sh", "-c", "echo 'building...' && echo 'build successful!' && true"]
     }
   ]
 }
