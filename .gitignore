@@ -1,0 +1,5 @@
+result
+qemu-image
+qemu-image-fail
+run-overlay.qcow2
+run-config/
